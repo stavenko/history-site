@@ -1,5 +1,8 @@
 const path = require('path');
 
+const buildDist = path.resolve(__dirname, 'dist');
+
+
 module.exports = {
   entry: './src/index.ts',
   module: {
@@ -14,6 +17,13 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: buildDist
+  },
+  devServer: {
+    open: true,
+    contentBase: buildDist,
+    watchContentBase: true
+
   }
+
 };

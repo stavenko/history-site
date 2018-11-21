@@ -1,17 +1,20 @@
-import Pages from '../src/pages';
+import * as Pages from '../src/pages';
 import * as React from 'react';
 import * as ReactDomServer from 'react-dom/server';
 import * as fs from 'fs';
 import * as path from 'path';
+import { SiteMap } from '../src/site';
 
 const BuildRoot = './dist/'
+type PageType<P> = React.ReactElement<P>;
 
 function main() {
-  for (const pageName of Object.keys(Pages)) {
+  for (const pageName of Object.keys(SiteMap)) {
     const pageSettings = {
       pageName
     };
-    const el = Pages[pageName];
+    const name = SiteMap[pageName].componentName;
+    const el = Pages[name];
     const page = `<html>
     <head>
       <script id='config' type='application/json'>${JSON.stringify(pageSettings)}</script>
