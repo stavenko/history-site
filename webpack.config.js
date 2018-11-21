@@ -5,6 +5,7 @@ const buildDist = path.resolve(__dirname, 'dist');
 
 module.exports = {
   entry: './src/index.ts',
+  mode: 'development',
   module: {
     rules: [{ 
       test: /\.tsx?$/,
