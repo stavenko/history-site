@@ -29,6 +29,11 @@ async function main(): Promise<void>{
     const name = SiteMap[pageName].componentName;
     // @ts-ignore
     const el = Pages[name];
+    if (!el) {
+      const pages = Object.keys(Pages);
+      const available = pages.filter(p => !/_/.test(p)).join(', ');
+      throw new Error(`Page with name ${name} is not found within pages.\nTry use some of ${available} `);
+    }
     const page = `<html>
     <head>
       <script id='config' type='application/json'>${JSON.stringify(pageSettings)}</script>

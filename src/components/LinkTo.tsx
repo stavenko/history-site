@@ -18,7 +18,7 @@ const Component: React.SFC<LinkToProps> = props => {
     </a>;
   }
 
-  throw new Error('Page is not exists in the SiteMap. Consider Editing this file');
+  throw new Error('Page is not exists in the SiteMap. Consider Editing file "site.ts"');
 }
 
 export default Component;

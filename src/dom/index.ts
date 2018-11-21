@@ -19,6 +19,10 @@ export function hydrate() {
         const item = Pages[name];
         if (item) {
           ReactDOM.hydrate(item, el[0]);
+        } else {
+          const pages = Object.keys(Pages);
+          const available = pages.filter(p => !/_/.test(p)).join(', ');
+          throw new Error(`Page with name ${name} is not found within pages.\nTry use some of ${available} `);
         }
       }
     }
