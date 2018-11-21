@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "downlevelIteration": true,
+    "lib": ["es2016", "dom"]
+  },
+
+  "include": ["src/**/*"],
+  "exclude": [
+    "./dist",
+    "./scripts",
+    "./node_modules"
+  ]
+}
