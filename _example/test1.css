@@ -1,0 +1,154 @@
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/MyriadPro/MyriadProBold/MyriadProBold.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'RalewayBlack';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/Raleway/RalewayBlack/RalewayBlack.woff') format('woff');
+  }
+  
+@font-face {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/Raleway/RalewayMedium/RalewayMedium.woff') format('woff');
+    }  
+
+    @font-face {
+        font-family: 'RalewayLight';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/Raleway/RalewayLight/RalewayLight.woff') format('woff');
+      }  
+.article-odd {
+    width: 400px;
+    float: left;
+    padding: 20px;
+}
+.article-even {
+    width: 400px;
+    float: left;
+    padding: 20px;
+}
+.clear {
+clear: both;  
+}
+.number {
+    font-size: 150px;
+    font-family: Myriad Pro;
+    font-weight: 700;
+    color: #6C0101;
+    float: left;
+    margin-left: -10px;
+    margin-right: 10px;
+    margin-bottom: -40px;
+    margin-top: -25px;
+}
+
+.thesis {
+    font-family: RalewayBlack;
+    font-size: 26px;
+    font-style: italic;
+    color: #6C0101;
+    margin-top: 16px;
+    
+}
+
+.text {
+     font-family: Raleway;
+     font-size: 16px;
+     color: rgb(31, 30, 30);
+     text-align: justify;
+     line-height: 1.5;
+}
+.quote {
+    width: 700px;
+    border: 2px solid #6C0101;
+    padding-bottom: 105px;
+    padding-top: 65px;
+    padding-left: 65px;
+    padding-right: 65px;
+    text-align: justify;
+    margin: 100px auto;
+    
+
+}
+.quote-text {
+    width: 700px;
+    font-family: RalewayLight;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(31, 30, 30);
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: -65px;
+    
+
+}
+.quote-comment {
+    width: 300px;
+    float: right;
+    font-family: RalewayLight;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(31, 30, 30);
+    line-height: 1.5;
+    text-align: right;
+    margin-top: 40px;
+
+}
+.quote-img {
+    border: 1px solid white;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -110px;
+    background-color: white; 
+}
+.header-block-first {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: RalewayLight;
+    font-weight: 400;
+    font-size: 35px;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    height: 240px;
+    line-height: 1.5;
+    border: 0px solid #6C0101;
+    background-color: #6C0101;
+
+}
+.header-block-second {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 0px;
+    color: #6C0101;
+    padding: 20px;
+    width: 300px;
+    height: 240px;
+    line-height: 1.5;
+    border: 0px solid #6C0101;
+    background-color: #6C0101;
+    opacity: 0.5;
+
+}
